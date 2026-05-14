@@ -1,7 +1,30 @@
 const Projects = () => {
   const projects = [
     {
-  title: "AfterCall – AI Post-Call Summary App",
+  title: "SurveillanceGuard - AI-Based CCTV Anomaly Detection System",
+  description:
+    "SurveillanceGuard is an AI-powered video anomaly detection system designed for real-time CCTV surveillance monitoring. The project uses a hybrid ConvLSTM Autoencoder architecture to learn normal activity patterns and automatically detect suspicious events such as fights, road accidents, and thefts without requiring labeled anomaly data during training. The system also generates automated JSON and PDF incident reports with severity levels and confidence scores.",
+  technologies: [
+    "Python",
+    "PyTorch",
+    "ConvLSTM",
+    "Autoencoder",
+    "CNN",
+    "Deep Learning",
+    
+    "UCF-Crime Dataset"
+  ],
+  highlights: [
+    "Developed a hybrid ConvLSTM Autoencoder for unsupervised video anomaly detection",
+    "Implemented adaptive statistical thresholding for scene-independent anomaly detection",
+    "Trained the model on normal CCTV footage and detected unseen anomalous activities",
+    "Achieved 95.34% AUC-ROC on the UCF-Crime surveillance dataset",
+    "Integrated automated JSON and PDF report generation with timestamps and severity levels",
+    "Built a real-time surveillance pipeline for detecting fights, accidents, and robbery events"
+  ]
+},
+    {
+  title: "AfterCall - AI Post-Call Summary App",
   description:
     "AfterCall is a privacy-first mobile app built during the Dreamflow Buildathon that helps users remember important conversations. Users can record or upload call audio after a conversation, which is converted into text and summarized into key points and action items. The app also generates natural voice recaps using ElevenLabs, enabling hands-free review of call summaries.",
   technologies: [
@@ -19,9 +42,32 @@ const Projects = () => {
     "Designed and shipped a complete app within buildathon timelines"
   ]
 },
+ {
+  title: "FishScan.AI - Fish Disease Detection System",
+  description:
+    "A deep learning-based fish disease detection system developed using the ResNet50 transfer learning model. The system analyzes fish images to identify infected regions and classify disease conditions, helping improve early disease diagnosis in aquaculture and fish farming environments.",
+  technologies: [
+    "Python",
+    "ResNet50",
+    "TensorFlow",
+    "Keras",
+    "OpenCV",
+    "Deep Learning",
+   "Flutter",
+    "Dart",
+    "REST APIs",
+  ],
+  highlights: [
+    "Implemented fish disease classification using the ResNet50 transfer learning model",
+    "Built an automated fish disease detection pipeline using deep learning",
+    "Applied image preprocessing and augmentation techniques for better model performance",
+    "Fine-tuned the pretrained ResNet50 architecture for accurate disease prediction",
+    "Developed an AI-based solution for early fish disease detection in aquaculture"
 
+  ]
+},
     {
-  title: "RythmX - Music Streaming App",
+  title: "Sonik - Music Streaming App",
   description: "A full-featured music streaming application built with Flutter that allows users to search, stream, and manage playlists. Features include high-quality audio streaming, playback queue management, and a modern UI with gradient themes. Integrated with Saavn API for extensive music library access.",
   technologies: ["Flutter", "Dart", "Just Audio", "REST APIs", "State Management", "Custom UI"],
   highlights: [

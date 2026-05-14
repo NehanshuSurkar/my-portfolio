@@ -49,7 +49,7 @@ const Hero = () => {
 {/* New Download Resume button below */}
 <div className="flex justify-center">
   <a
-    href="/resume_nehanshusurkar.pdf" 
+    href="/Nehanshu_Surkar_CV.pdf" 
     target="_blank"
     rel="noopener noreferrer"
     className="px-8 py-3 bg-gradient-to-r from-primary to-secondary rounded-lg font-semibold hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 hover:-translate-y-1"

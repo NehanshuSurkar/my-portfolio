@@ -1,6 +1,11 @@
 const Achievements = () => {
   const achievements = [
     {
+      title: "Winner, Rising India Hackathon",
+      organization: "Nagpur Institute of Technology, Nagpur",
+      icon: "🏆"
+    },
+    {
       title: "Runner-up, Campus Innovate Hackathon",
       organization: "G.H. Raisoni College of Engineering and Management, Nagpur",
       icon: "🏆"
