@@ -28,7 +28,7 @@ const About = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-12">
             <div className="text-center p-6 bg-darker/80 rounded-xl border border-gray-800">
-              <div className="text-4xl font-bold text-gradient mb-2">7.85</div>
+              <div className="text-4xl font-bold text-gradient mb-2">8.09</div>
               <div className="text-gray-400">Current CGPA</div>
             </div>
             <div className="text-center p-6 bg-darker/80 rounded-xl border border-gray-800">

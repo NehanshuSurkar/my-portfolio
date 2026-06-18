@@ -6,7 +6,7 @@ const Education = () => {
       institution: "Shri Ramdeobaba College of Engineering and Management, Nagpur",
       location: "Nagpur",
       duration: "2024 - 2027",
-      score: "CGPA: 7.85",
+      score: "CGPA: 8.09",
   
     },
     {

@@ -1,7 +1,40 @@
 const Projects = () => {
   const projects = [
+
     {
+      title: "FaceSync.ai - Offline Facial Recognition & Liveness Detection System",
+        github: "https://github.com/NehanshuSurkar/FaceSync-AI.git",
+        demo:"https://www.youtube.com/shorts/X7WgPwnBWAo",
+
+description:
+"FaceSync.ai is an AI-powered offline-first facial authentication and attendance management system designed for remote and zero-network environments. The project uses MobileFaceNet and TensorFlow Lite for on-device face recognition, combined with ML Kit-based liveness detection to prevent spoofing attacks through photographs or recorded videos. The system supports offline attendance logging using SQLite and automatically synchronizes records to the cloud via Supabase when internet connectivity is restored, followed by secure local data purging.",
+
+technologies: [
+"React Native",
+"TypeScript",
+"TensorFlow Lite",
+"MobileFaceNet",
+"Google ML Kit",
+"SQLite",
+"Supabase",
+"Vision Camera",
+"Android"
+],
+
+highlights: [
+"Developed a fully offline facial recognition system using MobileFaceNet and TensorFlow Lite",
+"Implemented randomized liveness detection using smile and head-movement verification to prevent spoofing attacks",
+"Built an offline-first attendance logging system with local SQLite storage",
+"Integrated automatic cloud synchronization and sync-purge workflow using Supabase",
+"Added low-light assistance mode using screen-flash illumination for improved face capture in dark environments",
+"Optimized the solution for mid-range mobile devices with fast on-device inference and lightweight deployment"
+]
+
+    },
+    {
+
   title: "SurveillanceGuard - AI-Based CCTV Anomaly Detection System",
+  github: "https://github.com/NehanshuSurkar/anomaly-detection.git",
   description:
     "SurveillanceGuard is an AI-powered video anomaly detection system designed for real-time CCTV surveillance monitoring. The project uses a hybrid ConvLSTM Autoencoder architecture to learn normal activity patterns and automatically detect suspicious events such as fights, road accidents, and thefts without requiring labeled anomaly data during training. The system also generates automated JSON and PDF incident reports with severity levels and confidence scores.",
   technologies: [
@@ -25,6 +58,9 @@ const Projects = () => {
 },
     {
   title: "AfterCall - AI Post-Call Summary App",
+
+   github: "https://github.com/NehanshuSurkar/AfterCall.git",
+   demo: "https://drive.google.com/file/d/12X29w5kvnWQzSH72_rbcJu0qhnKsfCdU/view?usp=sharing",
   description:
     "AfterCall is a privacy-first mobile app built during the Dreamflow Buildathon that helps users remember important conversations. Users can record or upload call audio after a conversation, which is converted into text and summarized into key points and action items. The app also generates natural voice recaps using ElevenLabs, enabling hands-free review of call summaries.",
   technologies: [
@@ -44,6 +80,8 @@ const Projects = () => {
 },
  {
   title: "FishScan.AI - Fish Disease Detection System",
+   github: "https://github.com/PushkarOnGit/Fish-Disease-Detection.git",
+   demo: "https://drive.google.com/file/d/1pseENSomc9o4Oph_oRnqhXi0nLSCaGrm/view?usp=sharing",
   description:
     "A deep learning-based fish disease detection system developed using the ResNet50 transfer learning model. The system analyzes fish images to identify infected regions and classify disease conditions, helping improve early disease diagnosis in aquaculture and fish farming environments.",
   technologies: [
@@ -68,6 +106,9 @@ const Projects = () => {
 },
     {
   title: "Sonik - Music Streaming App",
+   github: "https://github.com/NehanshuSurkar/Sonik.git",
+   demo:"https://drive.google.com/file/d/1D9FL60pA3mugRWpoFT2jpMcnfxpBRcyp/view?usp=sharing",
+ 
   description: "A full-featured music streaming application built with Flutter that allows users to search, stream, and manage playlists. Features include high-quality audio streaming, playback queue management, and a modern UI with gradient themes. Integrated with Saavn API for extensive music library access.",
   technologies: ["Flutter", "Dart", "Just Audio", "REST APIs", "State Management", "Custom UI"],
   highlights: [
@@ -82,6 +123,8 @@ const Projects = () => {
 },
     {
       title: "SPEX.AI - RAG-Based AI Chatbot",
+      github: "https://github.com/NehanshuSurkar/SPEX.AI_mobile_app.git",
+      demo: "https://drive.google.com/file/d/16AzUBm_NM6NxcS1Npd9l0d_fUj6dIFNM/view?usp=sharing",
       description: "A website-specific AI chatbot built during a hackathon, featuring RAG-based backend services for accurate, context-aware responses.",
       technologies: ["Flutter", "REST API", "RAG", "Web Crawling", "Vector Search", "LLMs"],
       highlights: [
@@ -93,6 +136,7 @@ const Projects = () => {
     },
     {
       title: "FitLife - Gym Management App",
+        github: "https://github.com/PushkarOnGit/GymManagementApp.git",
       description: "A comprehensive Flutter-based gym management application with production-ready features including attendance tracking, diet planning, subscription management, and analytics.",
       technologies: ["Flutter", "REST APIs", "State Management"],
       highlights: [
@@ -135,8 +179,10 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-dark/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-800 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2"
+className="bg-dark/50 backdrop-blur-sm rounded-2xl p-6 sm:p-8 border border-gray-800 hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 flex flex-col"
             >
+
+                <div className="flex-grow">
               <h3 className="text-2xl font-bold text-white mb-4">{project.title}</h3>
               <p className="text-gray-300 mb-6">{project.description}</p>
 
@@ -154,7 +200,7 @@ const Projects = () => {
                 </div>
               </div>
 
-              <div>
+              {/* <div>
                 <h4 className="text-sm font-semibold text-gray-400 mb-3">Key Highlights</h4>
                 <ul className="space-y-2">
                   {project.highlights.map((highlight, highlightIndex) => (
@@ -162,9 +208,53 @@ const Projects = () => {
                       <span className="text-secondary mt-1">▹</span>
                       <span>{highlight}</span>
                     </li>
-                  ))}
+                  )
+                  )
+                  }
                 </ul>
-              </div>
+              </div> */}
+              <div>
+  <h4 className="text-sm font-semibold text-gray-400 mb-3">
+    Key Highlights
+  </h4>
+
+  <ul className="space-y-2">
+    {project.highlights.map((highlight, highlightIndex) => (
+      <li key={highlightIndex} className="flex gap-2 text-gray-300 text-sm">
+        <span className="text-secondary mt-1">▹</span>
+        <span>{highlight}</span>
+      </li>
+    ))}
+  </ul>
+    </div>
+
+  {/* Project Links */}
+  <div className="mt-6 flex gap-3">
+    {project.github && (
+      <a
+        href={project.github}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-4 py-2 border border-primary text-primary rounded-lg hover:bg-primary hover:text-white transition"
+      >
+        GitHub
+      </a>
+    )}
+
+    {project.demo && (
+      <a
+        href={project.demo}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="px-4 py-2 bg-primary text-white rounded-lg hover:opacity-90 transition"
+      >
+        Live Demo
+      </a>
+    )}
+  </div>
+</div>
+
+              
             </div>
           ))}
         </div>
